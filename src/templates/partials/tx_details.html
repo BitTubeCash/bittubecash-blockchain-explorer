@@ -87,13 +87,13 @@
                         <br/>
                         Note: address/subaddress and viewkey are sent to the server, as the calculations are done on the server side
                     </h5>
-                    <form action="/myoutputs" method="post" style="width:100%; margin-top:2px" class="style-1">
+                    <form action="/myoutputs" method="post" style="width:100%; margin-top:2px" class="style-2">
                         <input type="hidden" name="tx_hash" value="{{tx_hash}}"><br/>
                         <input type="text" name="xmr_address" size="110" placeholder="Bittube address/subaddress"><br/>
                         <input type="text" name="viewkey" size="110" placeholder="Private viewkey" style="margin-top:5px"><br/>
                         <input type="hidden" name="raw_tx_data" value="{{raw_tx_data}}">
                         <!--above raw_tx_data field only used when checking raw tx data through tx pusher-->
-                        <input type="submit" value="Decode outputs" style="margin-top:5px" >
+                        <input type="submit" class="button" value="Decode outputs" style="margin-top:10px" >
                     </form>
                 </div>
             </div>
@@ -110,13 +110,13 @@
                         <br/>
                         Note: address/subaddress and tx private key are sent to the server, as the calculations are done on the server side
                     </h5>
-                    <form action="/prove" method="post" style="width:100%;margin-top:2px" class="style-1">
+                    <form action="/prove" method="post" style="width:100%;margin-top:2px" class="style-2">
                        <input type="hidden" name="txhash" value="{{tx_hash}}"><br/>
                        <input type="text" name="txprvkey" size="120" placeholder="Tx private key"><br/>
                         <input type="hidden" name="raw_tx_data" value="{{raw_tx_data}}">
                         <!--above raw_tx_data field only used when checking raw tx data through tx pusher-->
                        <input type="text" name="xmraddress" size="120" placeholder="Recipient's Bittube address/subaddress" style="margin-top:5px"><br/>
-                       <input type="submit" value="Prove sending" style="margin-top:5px">
+                       <input type="submit" class="button"value="Prove sending" style="margin-top:10px">
                     </form>
                 </div>
             </div>
